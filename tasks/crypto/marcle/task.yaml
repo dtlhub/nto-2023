@@ -1,0 +1,7 @@
+title: marcle
+category: crypto
+author: @y73n0k
+description: |
+  Слышал, что AES в такой конфигурации уязвим, поэтому выбрал отечественный аналог. С ним-то точно не будет проблем...
+  Сервер: {{ host }}:{{ port }}
+flag: nto{ecb_is_ecb_despite_encryption_algorithm}

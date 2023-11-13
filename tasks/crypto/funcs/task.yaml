@@ -1,0 +1,7 @@
+title: funcs
+category: crypto
+author: @y73n0k
+description: |
+  Я придумал хэш-функцию на булевых функциях и так в ней уверен, что готов предоставить интерактивное взаимодействие и свой захэшированный секрет!
+  Сервер: {{ host }}:{{ port }}
+flag: nto{did_you_know_that_xor_of_nand_and_nor_is_just_xor}
