@@ -6,7 +6,7 @@
 |------|----------|--------|------------|--------------|-------------|--------|
 |Уличные гонки|Misc|@LeKSuS-04|yes|no||Not started|
 |Just a Scratch|Misc|@LeKSUS-04|no|yes||Not started|
-|Blambda Kakulus|Misc|@LeKSuS-04|no|yes||Not started|
+|Calda Lambculus|Misc|@LeKSuS-04|no|yes||Prepared|
 |Amazeng|Misc|@LeKSuS-04|yes|no||Not started|
 |Коллайдос|Misc|@LeKSuS-04|yes|yes||Not started|
 |blum|Crypto|@y73n0k|no|yes||Prepared|
