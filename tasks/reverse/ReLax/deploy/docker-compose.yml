@@ -1,0 +1,10 @@
+services:
+  task:
+    build: .
+    restart: unless-stopped
+    mem_limit: 256M
+    cpus: 0.5
+    environment:
+      - FLAG=nto{M4rk0v_m4ch1n3_4lg0ri7hm5_4r3_5tunn1ng}
+    ports: 
+      - "80:8080"

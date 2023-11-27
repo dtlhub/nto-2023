@@ -1,0 +1,9 @@
+services:
+  fortune:
+    build: .
+    restart: unless-stopped 
+    pids_limit: 512
+    mem_limit: 256M
+    cpus: 1
+    ports:
+      - "1489:1489"

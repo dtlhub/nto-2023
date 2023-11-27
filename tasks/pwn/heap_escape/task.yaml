@@ -1,0 +1,8 @@
+title: heap escape
+category: pwn
+author: phoen1xxx
+description: |
+  I've implemented unbelievable secure heap. Try to break it.
+  
+  `nc pwn-1.mephictf.ru 7490`
+flag: nto{175_n07_50_h4rd_70_35c4p3}

@@ -1,0 +1,8 @@
+title: Коллайдос
+category: misc
+author: tarasovion
+description: |
+  Программировать на C++ люблю очень сильно. Алгоритмы всякие, структуры данных. Обожаю просто. Даже приложение написал. Посмотришь?
+
+  `nc misc.mephictf.ru 5000`
+flag: nto{th3_r34l_ha5h_c0ll15i0n_w4s_7h3_fr1end5_we_m4de_a1on9_7h3_w4y}

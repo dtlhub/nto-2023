@@ -1,0 +1,11 @@
+name: funcs
+services:
+  server:
+    build: .
+    ports:
+      - "7550:7550"
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 200M

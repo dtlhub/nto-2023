@@ -1,0 +1,8 @@
+title: marcle
+category: crypto
+author: y73n0k
+description: |
+  Слышал, что AES в такой конфигурации уязвим, поэтому выбрал отечественный аналог. С ним-то точно не будет проблем...
+
+  `nc crypto.mephictf.ru 7551`
+flag: nto{ecb_is_ecb_despite_encryption_algorithm}

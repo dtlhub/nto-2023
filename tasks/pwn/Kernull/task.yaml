@@ -1,0 +1,8 @@
+title: Kernull
+category: pwn
+author: synerr
+description: |
+  Yet Another Kernel task.
+
+  `nc pwn-2.mephictf.ru 6789`
+flag: nto{ur_F1R57_kErneL_745K_1_9Ue55}

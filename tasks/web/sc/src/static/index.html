@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Roboto';
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f5f5f5;
+      margin: 0;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .report {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      grid-gap: 16px;
+      padding: 16px;
+      background: #fff;
+    }
+    
+    .report--title {
+      margin: 0;
+      padding: 0;
+    }
+
+    .report--input {
+      background: none;
+      border: 1px solid #000;
+      border-radius: none;
+      font-size: 20px;
+      padding: 8px 4px;
+    }
+
+    .report--submit {
+      background: #375ACB;
+      border: none;
+      color: #fff;
+      border-radius: none;
+      font-size: 20px;
+      padding: 8px 4px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="report">
+      <h1 class="report--title">Report</h1>
+      <input type="text" name="reportUrl" class="report--input" placeholder="http://localhost:5000">
+      <button type="submit" value="Report" class="report--submit" onclick="submitForm()">Report</button>
+
+  </div>
+  
+
+  <script>
+    const reportInp = document.querySelector(".report--input")
+    const reportSubmit = document.querySelector(".report--submit")
+
+    const submitForm = () => {
+      window.location = `/report?url=${encodeURIComponent(reportInp.value)}`
+    }
+
+    const main = async () => {
+      const searchParams = new URL(window.location).searchParams
+      const q = searchParams.get("q")
+      const to = searchParams.get("to")
+      if (!q) return
+
+      const regex = new RegExp(q)
+      const flag = await fetch("/flag").then(res => res.text())
+      
+      const match = regex.test(flag)
+      if (match && to) window.location = to
+    }
+    main()
+  </script>
+</body>
+</html>

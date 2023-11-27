@@ -1,0 +1,1 @@
+cmd_/home/synerr/Trash/Kernel/Build/module/Module.symvers := sed 's/\.ko$$/\.o/' /home/synerr/Trash/Kernel/Build/module/modules.order | scripts/mod/modpost    -o /home/synerr/Trash/Kernel/Build/module/Module.symvers -e -i Module.symvers   -n -T -

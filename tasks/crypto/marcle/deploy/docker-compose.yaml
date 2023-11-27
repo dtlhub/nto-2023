@@ -1,0 +1,11 @@
+name: marcle
+services:
+  server:
+    build: .
+    ports:
+      - "7551:7551"
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 1gb

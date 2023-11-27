@@ -1,0 +1,8 @@
+title: Fortune Telling
+category: pwn
+author: eat_people 
+description: |
+  What lays ahead? Come into the fortune telling tent and see for yourself...
+
+  `nc pwn-1.mephictf.ru 1489`
+flag: nto{7H3_fU7Ur3_533M5_pr377y_8r19H7}

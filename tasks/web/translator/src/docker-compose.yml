@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    ports:
+      - 5979:8000
+    environment:
+      - FOLDER_ID=b1g91rk96kdhi4rghr6j
+      - API_KEY=AQVNziaRt3G5cii4QwM2V324Qo13HlLU9RIdgAjn
+      - FLAG=nto{b44df1af9a83642a524aa19e26670cd4}
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: "256M"
+          pids: 256
+      restart_policy:
+        condition: always

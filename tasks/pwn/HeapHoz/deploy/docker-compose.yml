@@ -1,0 +1,10 @@
+services:
+  task:
+    build: .
+    restart: unless-stopped
+    pids_limit: 512
+    read_only: true
+    mem_limit: 256M
+    cpus: 0.5
+    ports: 
+      - "8690:869"

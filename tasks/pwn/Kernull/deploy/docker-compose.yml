@@ -1,0 +1,9 @@
+version: "3"
+services:
+  kernull:
+    build:
+      context: ./service
+      dockerfile: Dockerfile
+    ports:
+      - "6789:6789"
+    restart: on-failure

@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    ports:
+      - 5999:5000
+    environment:
+      - FLAG=nto{5dfd01abc18ec490ed3ab8e5a4964795}
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: "256M"
+          pids: 256
+      restart_policy:
+        condition: always

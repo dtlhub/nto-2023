@@ -1,0 +1,8 @@
+title: PopRop
+category: pwn
+author: phoen1xxx
+description: |
+  Can you do rop just with pop?
+  
+  `nc pwn-2.mephictf.ru 7769`
+flag: nto{h0w_70_p0p_y0u2_f149}

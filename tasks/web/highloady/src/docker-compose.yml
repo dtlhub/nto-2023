@@ -1,0 +1,17 @@
+version: "3.0"
+
+services:
+  service:
+    build: .
+    environment:
+      - FLAG=nto{w0w_s3rv1ve_s1de_pr0tot7p3_p011ut1on}
+    ports:
+      - 2082:5000
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: "256M"
+          pids: 256
+      restart_policy:
+        condition: always

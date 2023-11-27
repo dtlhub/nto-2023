@@ -1,0 +1,15 @@
+services:
+  amazeng:
+    build: .
+    container_name: amazeng
+    ports:
+      - 8888:5000
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: "1G"
+          pids: 512
+      restart_policy:
+        condition: always
+    read_only: true

@@ -1,0 +1,8 @@
+title: translator
+category: web
+author: bavette_13
+description: |
+  Я сделал переводчик с русского на английский.
+
+  [http://web-2.mephictf.ru:5979](http://web-2.mephictf.ru:5979)
+flag: nto{b44df1af9a83642a524aa19e26670cd4}

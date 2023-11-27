@@ -1,0 +1,15 @@
+version: "3.6"
+
+services:
+  worker:
+    build: app
+    ports:
+      - 5001:5000
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: "256M"
+          pids: 256
+      restart_policy:
+        condition: always
